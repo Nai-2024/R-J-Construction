@@ -4,7 +4,7 @@ import companyBrandColors from "../data/CompanyBrandColors";
 function Hero() {
   return (
     <section
-      className="relative min-h-screen bg-contain bg-center text-white"
+       className="relative min-h-screen bg-cover bg-center bg-no-repeat text-white"
       style={{
         backgroundImage: `
           linear-gradient(
