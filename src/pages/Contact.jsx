@@ -50,7 +50,7 @@ function Contact() {
             ></div>
           </div>
 
-         <div className="grid xl:grid-cols-[0.9fr_1fr] gap-10 xl:gap-16 items-start">
+          <div className="grid xl:grid-cols-[0.9fr_1fr] gap-10 xl:gap-16 items-start">
             {/* Left Side */}
             <div>
               <div className="inline-flex items-center gap-4 mb-4 md:mb-5">
@@ -113,7 +113,7 @@ function Contact() {
             </div>
 
             {/* Form */}
-          <div className="mt-8 xl:mt-16 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 md:p-10 shadow-[0_25px_60px_rgba(22,32,45,0.14)]">
+        <div className="mt-8 xl:translate-y-34 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 md:p-10 shadow-[0_25px_60px_rgba(22,32,45,0.14)]">
               <h3
                 className="text-xl md:text-2xl font-bold mb-6"
                 style={{ color: primary }}
