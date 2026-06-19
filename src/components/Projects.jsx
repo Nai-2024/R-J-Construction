@@ -1,7 +1,7 @@
 import companyBrandColors from "../data/CompanyBrandColors";
 
 function Projects() {
-  const { primary, accent } = companyBrandColors;
+  const { accent } = companyBrandColors;
 
   const projects = [
     {
@@ -23,19 +23,19 @@ function Projects() {
   ];
 
   return (
-<section
-  className="relative py-10 overflow-hidden"
-  style={{
-    background: `
+    <section
+      className="relative py-10 overflow-hidden"
+      style={{
+        background: `
       radial-gradient(circle at top right, rgba(234,179,8,.06), transparent 35%),
       linear-gradient(135deg, #1E3043 0%, #16202D 45%, #0F1722 100%)
     `,
-  }}
->
-  <div
-    className="absolute inset-y-0 left-0 w-[80%] pointer-events-none"
-    style={{
-      background: `
+      }}
+    >
+      <div
+        className="absolute inset-y-0 left-0 w-[80%] pointer-events-none"
+        style={{
+          background: `
         linear-gradient(
           90deg,
           rgba(255,255,255,0.08) 0%,
@@ -45,12 +45,12 @@ function Projects() {
           transparent 100%
         )
       `,
-    }}
-  ></div>
+        }}
+      ></div>
 
-  <div className="relative z-10 max-w-6xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="flex items-center gap-6 mb-10">
-          <h2 className="text-3xl md:text-3xl font-bold text-white">
+          <h2 className="text-2xl md:text-2xl font-bold text-white">
             Our Projects
           </h2>
 

@@ -21,22 +21,22 @@ function WhyChoose() {
       className="py-10"
       style={{ backgroundColor: companyBrandColors.lightBackground }}
     >
-      <div className="max-w-6xl mx-auto">
-        <div className="flex items-center mb-8 gap-7">
+      <div className="max-w-7xl mx-auto px-1">
+        <div className="flex items-center gap-6 px-4 mb-8">
           <h2
-            className="text-3xl font-bold ml-4"
+            className="text-2xl font-bold whitespace-nowrap"
             style={{ color: companyBrandColors.primary }}
           >
             Why Choose R&J Construction
           </h2>
 
           <div
-            className="flex-1 h-[3px]"
+            className="flex-1 h-[2.5px]"
             style={{ backgroundColor: companyBrandColors.accent }}
-          ></div>
+          />
         </div>
 
-        <div className="grid md:grid-cols-[1fr_1.5fr] gap-6 items-center">
+        <div className="grid md:grid-cols-[1fr_1.5fr] gap-6 px-4 items-center">
           <div>
             <img
               src="https://images.unsplash.com/photo-1504307651254-35680f356dfd"

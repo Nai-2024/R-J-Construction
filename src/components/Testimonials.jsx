@@ -58,22 +58,20 @@ function Testimonials() {
       {/* Mobile Dark Overlay */}
       <div className="absolute inset-0 bg-[#16202d] lg:hidden"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <div className="flex items-center gap-6 mb-8">
-          <h2 className="text-3xl font-bold text-white">Client Testimonials</h2>
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 mb-8">
+          <div className="flex items-center gap-6">
+            <h2 className="text-2xl font-bold text-white whitespace-nowrap">
+              Client Testimonials
+            </h2>
 
-          <div
-            className="w-[51%] h-[2px]"
-            style={{
-              background: `linear-gradient(to right,
-             ${accent} 0%,
-             rgba(234,179,8,0.95) 25%,
-             rgba(234,179,8,0.65) 50%,
-             rgba(234,179,8,0.35) 70%,
-             rgba(234,179,8,0.12) 88%,
-              transparent 100%)`,
-            }}
-          ></div>
+            <div
+              className="flex-1 h-[2px]"
+              style={{ backgroundColor: accent }}
+            ></div>
+          </div>
+
+          <div className="hidden lg:block"></div>
         </div>
 
         <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-center">

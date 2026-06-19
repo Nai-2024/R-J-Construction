@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
-   <header className="fixed top-0 left-0 w-full z-50 bg-slate-900/65 backdrop-blur-sm border-b border-slate-800">
+   <header className="fixed top-0 left-0 w-full z-50 bg-[#16202D] border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-white">
           R&J <span className="text-yellow-400">Construction</span>
         </h1>
 
         <nav className="hidden md:flex items-center gap-8 text-white font-medium">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
 
         <a

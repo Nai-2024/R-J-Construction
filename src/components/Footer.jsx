@@ -30,7 +30,7 @@ function Footer() {
       )`,
         }}
       ></div>
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-10 border-b border-white/10 pb-10">
           <div>
             <h2 className="text-2xl font-bold text-white">
