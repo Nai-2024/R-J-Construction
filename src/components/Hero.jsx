@@ -42,45 +42,43 @@ function Hero() {
         </div>
       </div>
 
-      <div className="max-w-[1500px] mx-auto">
-        <section className="mt-10 bg-[#16202d]/90 py-8 shadow-2xl">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex items-center gap-6 mb-6">
-              <h3 className="text-2xl font-bold text-white whitespace-nowrap">
-                Our Services
-              </h3>
+      <section className="mt-10 bg-[#16202d]/90 py-8 shadow-2xl">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center gap-6 mb-6">
+            <h3 className="text-2xl font-bold text-white whitespace-nowrap">
+              Our Services
+            </h3>
 
-              <div
-                className="flex-1 h-[2px]"
-                style={{ backgroundColor: companyBrandColors.accent }}
-              />
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {[
-                "Full Renovation",
-                "Kitchen & Cabinets",
-                "Drywall & Framing",
-                "Painting & Flooring",
-                "Plumbing",
-                "Deck Installation",
-                "Fence Installation",
-                "Stairs Renovation",
-              ].map((service) => (
-                <div
-                  key={service}
-                  className="bg-[#253247] border border-[#41506a] rounded-md p-6 shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all duration-300 hover:bg-[#2f3d55]"
-                >
-                  <h4 className="font-bold text-white">{service}</h4>
-                  <p className="text-sm text-[#B7C0CD] mt-2 leading-relaxed">
-                    Professional and reliable workmanship.
-                  </p>
-                </div>
-              ))}
-            </div>
+            <div
+              className="flex-1 h-[2px]"
+              style={{ backgroundColor: companyBrandColors.accent }}
+            />
           </div>
-        </section>
-      </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              "Full Renovation",
+              "Kitchen & Cabinets",
+              "Drywall & Framing",
+              "Painting & Flooring",
+              "Plumbing",
+              "Deck Installation",
+              "Fence Installation",
+              "Stairs Renovation",
+            ].map((service) => (
+              <div
+                key={service}
+                className="bg-[#253247] border border-[#41506a] rounded-md p-6 shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all duration-300 hover:bg-[#2f3d55]"
+              >
+                <h4 className="font-bold text-white">{service}</h4>
+                <p className="text-sm text-[#B7C0CD] mt-2 leading-relaxed">
+                  Professional and reliable workmanship.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
