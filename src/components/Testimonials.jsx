@@ -1,6 +1,7 @@
 import companyBrandColors from "../data/CompanyBrandColors";
 import testimonialImg from "../assets/testimonialImg2.png";
 import testimonialBg from "../assets/testimonialBg.png";
+import { Link } from "react-router-dom";
 
 function Testimonials() {
   const { primary, accent } = companyBrandColors;
@@ -115,19 +116,23 @@ function Testimonials() {
         </div>
 
         <div className="text-center mt-8">
-          <button
+          <Link
+            to="/free-quote"
             className="
-      px-8 py-3
-      font-bold
-      rounded-sm
-      cursor-pointer
-      transition-all
-      duration-300
-      ease-out
-      hover:-translate-y-1
-      hover:shadow-2xl
-      active:translate-y-0
-    "
+    inline-flex
+    items-center
+    justify-center
+    px-8 py-3
+    font-bold
+    rounded-sm
+    cursor-pointer
+    transition-all
+    duration-300
+    ease-out
+    hover:-translate-y-1
+    hover:shadow-2xl
+    active:translate-y-0
+  "
             style={{
               backgroundColor: accent,
               color: primary,
@@ -145,7 +150,7 @@ function Testimonials() {
             }}
           >
             Request a Free Quote
-          </button>
+          </Link>
         </div>
       </div>
     </section>

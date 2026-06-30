@@ -1,26 +1,33 @@
 import HeroImg from "../assets/hero.png";
 import companyBrandColors from "../data/CompanyBrandColors";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <section
-       className="relative min-h-screen bg-cover bg-center bg-no-repeat text-white"
+      className="
+  relative min-h-screen bg-cover bg-no-repeat text-white
+  bg-[position:71%_center]
+  sm:bg-[position:80%_center]
+  md:bg-[position:72%_center]
+  lg:bg-[position:82%_center]
+"
       style={{
         backgroundImage: `
-          linear-gradient(
-            90deg,
-            rgba(7,21,40,0.96) 0%,
-             rgba(7,21,40,0.35) 40%,
-             rgba(7,21,40,0.10) 60%,
-                 rgba(7,21,40,0.05) 100%
-          ),
-          url(${HeroImg})
-        `,
+      linear-gradient(
+        90deg,
+        rgba(7,21,40,0.96) 0%,
+        rgba(7,21,40,0.45) 42%,
+        rgba(7,21,40,0.15) 65%,
+        rgba(7,21,40,0.05) 100%
+      ),
+      url(${HeroImg})
+    `,
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 pt-44 pb-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 pt-36 sm:pt-40 md:pt-44 lg:pt-44 pb-10">
         <div className="max-w-3xl">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight [text-shadow:0_4px_20px_rgba(0,0,0,0.6)]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight [text-shadow:0_4px_20px_rgba(0,0,0,0.6)]">
             Complete Renovation Solutions for Your Home
           </h2>
 
@@ -30,10 +37,13 @@ function Hero() {
             fences, and more.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a className="bg-[#FACC15] text-gray-900 px-6 py-3 rounded-sm font-bold hover:bg-[#FCD34D] cursor-pointer shadow-lg">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 items-start">
+            <Link
+              to="/free-quote"
+              className="inline-flex justify-center bg-[#FACC15] text-gray-900 px-7 py-3 rounded-sm font-bold hover:bg-[#FCD34D] cursor-pointer shadow-lg"
+            >
               Get a Free Quote
-            </a>
+            </Link>
 
             <a className="border border-white/70 bg-[#071528]/70 text-white px-6 py-3 rounded-sm font-semibold hover:bg-white hover:text-gray-900 cursor-pointer">
               View Our Projects

@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { primary, accent } = companyBrandColors;
@@ -46,29 +47,39 @@ function Footer() {
             <h3 className="text-white font-bold mb-4">Quick Links</h3>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <a href="#" className="hover:text-[#EAB308] transition">
+                <Link to="/" className="hover:text-[#EAB308] transition">
                   Home
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="#" className="hover:text-[#EAB308] transition">
+                <Link to="/about" className="hover:text-[#EAB308] transition">
                   About
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="#" className="hover:text-[#EAB308] transition">
+                <Link
+                  to="/services"
+                  className="hover:text-[#EAB308] transition"
+                >
                   Services
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="#" className="hover:text-[#EAB308] transition">
+                <Link
+                  to="/projects"
+                  className="hover:text-[#EAB308] transition"
+                >
                   Projects
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="#" className="hover:text-[#EAB308] transition">
+                <Link to="/contact" className="hover:text-[#EAB308] transition">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,11 +87,35 @@ function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">Our Services</h3>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li>Home Renovation</li>
-              <li>Kitchen Remodeling</li>
-              <li>Basement Finishing</li>
-              <li>Deck Construction</li>
-              <li>Flooring & Painting</li>
+              <li>
+                <Link to="/" className="hover:text-[#FACC15] transition">
+                  Home Renovation
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/" className="hover:text-[#FACC15] transition">
+                  Kitchen Remodeling
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/" className="hover:text-[#FACC15] transition">
+                  Basement Finishing
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/" className="hover:text-[#FACC15] transition">
+                  Deck Construction
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/" className="hover:text-[#FACC15] transition">
+                  Flooring & Painting
+                </Link>
+              </li>
             </ul>
           </div>
 
