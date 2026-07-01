@@ -16,10 +16,10 @@ function Hero() {
         backgroundImage: `
       linear-gradient(
         90deg,
-        rgba(7,21,40,0.96) 0%,
-        rgba(7,21,40,0.45) 42%,
-        rgba(7,21,40,0.15) 65%,
-        rgba(7,21,40,0.05) 100%
+        rgba(7,21,40,0.97) 0%,
+        rgba(7,21,40,0.88) 34%,
+        rgba(7,21,40,0.45) 62%,
+        rgba(7,21,40,0.20) 100%
       ),
       url(${HeroImg})
     `,
